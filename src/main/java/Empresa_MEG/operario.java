@@ -1,13 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Empresa_MEG;
 
-/**
- *
- * @author noteb
- */
-public class operario {
+public class operario extends Empleado  {
+
+    private String area; 
+    private String puesto;
+    private int horasTrabajadas;
+    private double valorHora = 120.0;
+
+    public operario(int legajo, String nombre, String apellido, String telefono, String direccion, String mail, Date fechaNacimiento , int horasTrabajadas, String puesto, String area){
+        super(legajo,nombre, apellido, telefono, direccion, mail, fechaNacimiento);
+        this.horasTrabajadas = horasTrabajadas;
+        this.area = area;
+        this.puesto = puesto;
+    }
+    
+    @Override
+    public double calcularSueldoBruto() {
+      return horasTrabajadas*valorHora;
+    }
     
 }
