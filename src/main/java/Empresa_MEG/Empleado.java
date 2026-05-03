@@ -1,5 +1,6 @@
 package Empresa_MEG;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public abstract class Empleado {
@@ -10,6 +11,8 @@ public abstract class Empleado {
   protected String direccion;
   protected String mail;
   protected Date fechaNacimiento;
+  protected int totalDescuento=19;
+
   
   public Empleado (int legajo, String nombre, String apellido, String telefono, String direccion, String mail, Date fechaNacimiento){
       this.legajo = legajo;
@@ -23,7 +26,7 @@ public abstract class Empleado {
   
   public abstract double calcularSueldoBruto();
   
-  public double calcularDescuento(double totalDescuento){
+  public double calcularDescuento(){
       
       return calcularSueldoBruto()*(totalDescuento/100.0); 
       
@@ -34,5 +37,15 @@ public abstract class Empleado {
       return calcularSueldoBruto() - calcularDescuento();
       
   }
-  
+  @Override
+    public String toString() {
+    
+    return "Legajo: " + legajo +
+           "\nNombre: " + nombre + " " + apellido +
+           "\nTelefono: " + telefono +
+           "\nDireccion: " + direccion +
+           "\nFecha de nacimiento: " + fechaNacimiento +
+           "\nMail: " + mail;
+    }
 }
+

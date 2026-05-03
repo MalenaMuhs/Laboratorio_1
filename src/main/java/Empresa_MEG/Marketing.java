@@ -1,5 +1,5 @@
 package Empresa_MEG;
-
+import java.util.Date;
 public class Marketing extends Empleado {
     
     private String horario;
