@@ -14,4 +14,11 @@ public class Marketing extends Empleado {
     public double calcularSueldoBruto() {
          return sueldoFijo; 
     }
+    @Override
+    public String toString() {
+        
+        return super.toString() +
+           "\nHorario: " + horario +
+           "\nSueldo Neto: " + calcularSueldoNeto();
+    }
 }

@@ -17,5 +17,11 @@ public class Vendedor extends Empleado {
     public double calcularSueldoBruto() {  
         return sueldoBase + (totalVentasMes*comision);
     }
-    
+    @Override
+    public String toString() {
+        
+        return super.toString() +
+           "\nVentas del mes: " + totalVentasMes +
+           "\nSueldo Neto: " + calcularSueldoNeto();
+    }
 }
