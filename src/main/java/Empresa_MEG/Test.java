@@ -11,13 +11,15 @@ public class Test {
         int cantOperarios=10;
         int cantMarketing= 2;
         int cantVendedores=3;
+        int cantTotalEmpleados=15;
         int j = 0;
        
         Scanner sc_string = new Scanner(System.in);
         Scanner sc_int = new Scanner(System.in);
         
-        Empleado[] empleados = new Empleado[15];
+        Empleado[] empleados = new Empleado[cantTotalEmpleados];
         
+        //PIDE DATOS DE OPERARIO
         System.out.println("OPERARIOS");
         for (int i = 0; i < cantOperarios; i++) {
                 System.out.println("Operario nro. " + (i+1));
@@ -51,7 +53,8 @@ public class Test {
             empleados[j]= new operario(legajo,  nombre,  apellido,  telefono,  direccion, mail, fecha ,  horas,  puesto, area);
             j++;
         }
-    
+        
+        //PIDE DATOS DE VENDEDOR
             System.out.println("VENDEDORES: ");
         for (int i = 0; i < cantVendedores; i++) {
                 System.out.println("Vendedor nro. " + (i+1));
@@ -83,6 +86,8 @@ public class Test {
             empleados[j]= new Vendedor(legajo,  nombre,  apellido,  telefono,  direccion,  mail,    fecha,  medioDeVentas, totalMes);
             j++;                
         }
+       
+        //PIDE DATOS DE MARKETING 
         System.out.println("MARKETING: ");
         for (int i=0; i < cantMarketing; i++){
                 System.out.println("Marketing nro. " + (i+1));
@@ -111,5 +116,13 @@ public class Test {
             empleados[j] = new Marketing(legajo,  nombre,  apellido,  telefono,  direccion,  mail,   fecha,  horario);
             j++;
         }               
+    
+        for (int i = 0; i < cantTotalEmpleados ; i++) {
+            if (i==0)  System.out.println("OPERARIOS:");
+            if (i==9)  System.out.println("VENDEDORES:");
+            if (i==12)  System.out.println("MARKETING:");
+               
+            System.out.println(empleados[i]);
+        }
     }
 }
