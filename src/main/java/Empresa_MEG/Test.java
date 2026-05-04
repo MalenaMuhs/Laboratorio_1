@@ -20,7 +20,7 @@ public class Test {
         
         System.out.println("OPERARIOS");
         for (int i = 0; i < cantOperarios; i++) {
-                System.out.println("Operario nro. " + i);
+                System.out.println("Operario nro. " + (i+1));
                 System.out.print("Nombre: ");
                 String nombre = sc_string.nextLine();
                 System.out.print("Apellido: ");
@@ -54,7 +54,7 @@ public class Test {
     
             System.out.println("VENDEDORES: ");
         for (int i = 0; i < cantVendedores; i++) {
-                System.out.println("Vendedor nro. " + i);
+                System.out.println("Vendedor nro. " + (i+1));
                 System.out.print("Nombre: ");
                 String nombre = sc_string.nextLine();
                 System.out.print("Apellido: ");
@@ -83,26 +83,27 @@ public class Test {
             empleados[j]= new Vendedor(legajo,  nombre,  apellido,  telefono,  direccion,  mail,    fecha,  medioDeVentas, totalMes);
             j++;                
         }
-        System.out.println("Marketing: ");
+        System.out.println("MARKETING: ");
         for (int i=0; i < cantMarketing; i++){
-                System.out.println("Legajo: ");
-                int legajo = sc_int.nextInt();
-                System.out.println("Nombre: ");
+                System.out.println("Marketing nro. " + (i+1));
+                System.out.print("Nombre: ");
                 String nombre = sc_string.nextLine();
-                System.out.println("Apellido: ");
+                System.out.print("Apellido: ");
                 String apellido = sc_string.nextLine();
-                System.out.println("Telefono: ");
-                String telefono = sc_string.nextLine();
-                System.out.println("Direccion: ");
-                String direccion = sc_string.nextLine();
-                System.out.println("Mail: ");
+                System.out.print("Legajo: ");
+                int legajo = sc_int.nextInt();
+                System.out.print("Telelfono: ");
+                 String telefono = sc_string.nextLine();
+                System.out.print("Mail: ");
                 String mail = sc_string.nextLine();
-                System.out.println("Fecha de nacimiento");
-                System.out.println("Dia: ");
+                System.out.print("Direccion: ");
+                String direccion = sc_string.nextLine();
+                System.out.print("Fecha de nacimiento: ");
+                System.out.println("Ingrese el dia: ");
                 int dia = sc_int.nextInt();
-                System.out.println("Mes: ");
+                System.out.println("Ingrese el mes: ");
                 int mes = sc_int.nextInt();
-                System.out.println("Anio: ");
+                System.out.println("Ingrese el anio: ");
                 int año = sc_int.nextInt();
                 LocalDate fecha = LocalDate.of(año, mes, dia);
                 System.out.println("Horario: ");
