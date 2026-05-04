@@ -1,11 +1,13 @@
 package Empresa_MEG;
-import java.util.Date;
+
+import java.time.LocalDate;
+
 public class Marketing extends Empleado {
     
     private String horario;
     private double sueldoFijo = 50000.0;
     
-    public Marketing(int legajo, String nombre, String apellido, String telefono, String direccion, String mail, Date fechaNacimiento, String horario){
+    public Marketing(int legajo, String nombre, String apellido, String telefono, String direccion, String mail, LocalDate fechaNacimiento, String horario){
         super(legajo,nombre, apellido, telefono, direccion, mail, fechaNacimiento);
         this.horario = horario;
     }

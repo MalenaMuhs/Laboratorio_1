@@ -1,7 +1,6 @@
 package Empresa_MEG;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDate;
 
 public abstract class Empleado {
   protected int legajo;
@@ -10,11 +9,11 @@ public abstract class Empleado {
   protected String telefono;
   protected String direccion;
   protected String mail;
-  protected Date fechaNacimiento;
+  protected LocalDate fechaNacimiento;
   protected int totalDescuento=19;
 
   
-  public Empleado (int legajo, String nombre, String apellido, String telefono, String direccion, String mail, Date fechaNacimiento){
+  public Empleado (int legajo, String nombre, String apellido, String telefono, String direccion, String mail, LocalDate fechaNacimiento){
       this.legajo = legajo;
       this.apellido = apellido;
       this.nombre = nombre;
