@@ -2,7 +2,7 @@ package Empresa_MEG;
 
 import java.time.LocalDate;
 
-public class operario extends Empleado  {
+public class Operario extends Empleado  {
 
     private String area; 
     private String puesto;
@@ -10,7 +10,7 @@ public class operario extends Empleado  {
     private double valorHora = 120.0;
     
 
-    public operario(int legajo, String nombre, String apellido, String telefono, String direccion, 
+    public Operario(int legajo, String nombre, String apellido, String telefono, String direccion, 
                     String mail, LocalDate fechaNacimiento , int horasTrabajadas, String puesto, String area){
         super(legajo,nombre, apellido, telefono, direccion, mail, fechaNacimiento);
         this.horasTrabajadas = horasTrabajadas;
@@ -27,7 +27,7 @@ public class operario extends Empleado  {
         
         return super.toString() +
            "\nHoras trabajadas: " + horasTrabajadas +
-           "\nSueldo Neto: " + calcularSueldoNeto();
+           "\nSueldo Neto: " + String.format("%.1f", calcularSueldoNeto());
     }
     
 }

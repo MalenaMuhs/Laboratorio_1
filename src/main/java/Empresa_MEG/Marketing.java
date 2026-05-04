@@ -21,6 +21,6 @@ public class Marketing extends Empleado {
         
         return super.toString() +
            "\nHorario: " + horario +
-           "\nSueldo Neto: " + calcularSueldoNeto();
+           "\nSueldo Neto: " + String.format("%.1f", calcularSueldoNeto());
     }
 }

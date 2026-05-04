@@ -40,7 +40,7 @@ public abstract class Empleado {
     public String toString() {
     
     return "Legajo: " + legajo +
-           "\nNombre: " + nombre + " " + apellido +
+           "\nNombre completo: " + nombre + " " + apellido +
            "\nTelefono: " + telefono +
            "\nDireccion: " + direccion +
            "\nFecha de nacimiento: " + fechaNacimiento +

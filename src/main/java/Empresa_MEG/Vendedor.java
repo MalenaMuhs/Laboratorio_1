@@ -23,7 +23,8 @@ public class Vendedor extends Empleado {
     public String toString() {
         
         return super.toString() +
-           "\nVentas del mes: " + totalVentasMes +
-           "\nSueldo Neto: " + calcularSueldoNeto();
+           "\nMedio de venta: " + medioVenta +
+           "\nVentas del mes: " +  totalVentasMes +
+           "\nSueldo Neto: " + String.format("%.2f", calcularSueldoNeto());
     }
 }
