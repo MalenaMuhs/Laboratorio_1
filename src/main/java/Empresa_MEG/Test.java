@@ -10,10 +10,10 @@ public class Test {
 
     public static void main(String[] args) {
 
-        final int CANT_OPERARIO = 1;
-        final int CANT_MARKETING = 1;
-        final int CANT_VENDEDOR = 1;
-        final int CANT_TOTAL_EMPLEADOS = 3;
+        final int CANT_OPERARIO = 10;
+        final int CANT_MARKETING = 2;
+        final int CANT_VENDEDOR = 3;
+        final int CANT_TOTAL_EMPLEADOS = 15;
         int j = 0;
 
         Scanner sc = new Scanner(System.in);
