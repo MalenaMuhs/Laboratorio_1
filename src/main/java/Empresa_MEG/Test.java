@@ -1,6 +1,11 @@
 /*
 Alumnos: Nicolas Arumay y Malena Muhs
  */
+
+/*CORECCIONES:
+-PEDIR LOS DATOS VA EN UNA FUNCION
+-HACER LOS CONSTRUCTORES VACIOS
+*/
 package Empresa_MEG;
 
 import java.time.LocalDate;
